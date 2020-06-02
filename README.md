@@ -38,7 +38,7 @@ There are certain prerequirements that needs to be fulfilled. These are as follo
  # WebServer
 The web server consist of two components: Webpage (based on HTML and Javascript) and Webservice (based on C#). The function of the webservice is to grab the corresponding '.json' URLs of 3D tilesets from the server and visulize them on the webpage as requested by the user. The visualization is done as one State at a time due to large amount of data. The front-end of the website is developed using JavaScript with CesiumJS Library, few functionalities are defined to make the webpage interactive.  
  
- ![](Image/Webpage.jpg)
+ ![](Image/WebPage.jpg)
  
 The webpage has mulitiple user interaction options:
  * Zoom to State: Select a State from the dropdown list to view its corresponding 3D model of buildings
