@@ -32,7 +32,7 @@ There are certain prerequirements that needs to be fulfilled. These are as follo
 
 * Python GUI: It has two major parts Download, Conversion.
 ![](https://github.com/82siha1mpg/3DCityVisualization/blob/master/Image/PythonGUI.JPG)
-  **Download:** As stated above, the data is fetched from html webpage. This webpage contains hundreds of links to fetch open data. So this portion of software contains an option to just give the link of the webpage and folder where the data can be downloaded and saved from the wegpage. 
+  **Download:** As stated above, the data is fetched from html webpage. This webpage contains hundreds of links to fetch open data. So this portion of software contains an option to just give the link of the webpage and folder where the data can be downloaded and saved from the wegpage. </br>
   **Conversion:** This portion of python software allows to convert CityGML files to Cesium 3D Tiles. It requires FME model, input CityGML file(s) and output folder location. There are additional options provided. To understand this functionality, it is important to mention here that there are total 51 states data which further contains 5026 files. So, it is practically impossible for machines to convert all of the data at once. So this additional options are provided for the convenience of the user. If the user possess a very powerful machine they can opt to convert **All** models at once, or **State-Wise**, and  in the worst case if the machine is not very powerful then **Cluster{State-wise}** option can group certain input files to process together. 
   
  # WebServer
