@@ -13,3 +13,7 @@ Second major part in this project is an IIS server which contains webpages that 
 * Automation of the conversion of CityGML to 3D Tiles.
 * Building a GUI for automation of tasks.
 * Visualize 3D city model of the whole USA (nearly 125 million buildings) with LOD1 building models on a Web-Based platform to access and examine it effortlessly. 
+
+# Data Used in this project
+* This study is conducted for data of “The United States”. 
+* Source of Data: https://github.com/opencitymodel/opencitymodel
