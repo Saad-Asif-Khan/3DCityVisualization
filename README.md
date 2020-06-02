@@ -17,3 +17,11 @@ Second major part in this project is an IIS server which contains webpages that 
 # Data Used in this project
 * This study is conducted for data of “The United States”. 
 * Source of Data: https://github.com/opencitymodel/opencitymodel
+
+
+# Prerequisites
+There are certain prerequirements that needs to be fulfilled. These are as follows: 
+1. **FME** 
+2. **Python** 
+3. **JavaScript**
+4. **HTML**
