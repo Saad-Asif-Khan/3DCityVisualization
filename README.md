@@ -8,3 +8,8 @@ Second major part in this project is an IIS server which contains webpages that 
 * However CityGML is not optimized to be visualized on Web.
 * For faster rendering of 3D data on web, Cesium 3D tiles is a better option.
 
+# Objective
+* Data collection/ auto-downloading from the source i.e. GitHub repository. 
+* Automation of the conversion of CityGML to 3D Tiles.
+* Building a GUI for automation of tasks.
+* Visualize 3D city model of the whole USA (nearly 125 million buildings) with LOD1 building models on a Web-Based platform to access and examine it effortlessly. 
