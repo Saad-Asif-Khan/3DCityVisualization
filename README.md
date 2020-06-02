@@ -22,6 +22,7 @@ Second major part in this project is an IIS server which contains webpages that 
 There are certain prerequirements that needs to be fulfilled. These are as follows: 
 1. **FME** 
 2. **Python** 
+3. **PyQT5**
 3. **JavaScript**
 4. **HTML**
 
@@ -31,6 +32,6 @@ There are certain prerequirements that needs to be fulfilled. These are as follo
 
 * Python GUI: It has two major parts Download, Conversion.
 ![](https://github.com/82siha1mpg/3DCityVisualization/blob/master/Image/PythonGUI.JPG)
-  **Download:**
+  **Download:** As stated above, the data is fetched from html webpage. This webpage contains hundreds of links to fetch open data. So this portion of software contains an option to just give the link of the webpage and folder where the data can be downloaded and saved from the wegpage. 
   **Conversion:**
 
