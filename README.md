@@ -29,4 +29,8 @@ There are certain prerequirements that needs to be fulfilled. These are as follo
 * Following methodology has been used to implement this project:
 ![](https://github.com/82siha1mpg/3DCityVisualization/blob/master/Image/Methodology.JPG)
 
+* Python GUI: It has two major parts Download, Conversion.
+![](https://github.com/82siha1mpg/3DCityVisualization/blob/master/Image/PythonGUI.JPG)
+  **Download:**
+  **Conversion:**
 
