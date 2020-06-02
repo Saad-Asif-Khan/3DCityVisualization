@@ -1,0 +1,1382 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command-line to run this workspace:
+#        "C:\Program Files\FME\fme.exe" "D:\HFT Course Material\Sem 2\GSS\FME Model\Final_V3.fmw"
+#              --SourceDataset_CITYGML """"""D:\HFT Course Material\Sem 2\GSS\opencitymodel-master\Data\data download test\Alaska\Alaska-02020-000.zip"" ""D:\HFT Course Material\Sem 2\GSS\opencitymodel-master\Data\data download test\Alaska\Alaska-02020-001.zip"" ""D:\HFT Course Material\Sem 2\GSS\opencitymodel-master\Data\data download test\Alaska\Alaska-02090-000.zip"" ""D:\HFT Course Material\Sem 2\GSS\opencitymodel-master\Data\data download test\Alaska\Alaska-02105-000.zip"" ""D:\HFT Course Material\Sem 2\GSS\opencitymodel-master\Data\data download test\Alaska\Alaska-02110-000.zip"" ""D:\HFT Course Material\Sem 2\GSS\opencitymodel-master\Data\data download test\Alaska\Alaska-02170-000.zip""""""
+#              --DestDataset_CESIUM3DTILES "C:\Users\Standard-User\Desktop\Alaska"
+#    
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="3482.1 638.39"
+#!   DOC_TOP_LEFT="-2536.2 -823.288"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="19813"
+#!   FME_DOCUMENT_GUID="3eef5e87-36ba-4f43-81af-3d84e97d5855"
+#!   FME_DOCUMENT_PRIORGUID="b575872a-a318-4123-9389-5fdf7bfe8665,d851b966-1c04-4530-8518-90f383339dbe,97080a10-cf5f-48ee-9ea4-ed3380384fe1,3ac4ecb5-b42c-42e5-985a-f103dc194dd8,e9bd0a06-2cde-4381-9f90-4201dea0b38d,95c68fb6-ef3b-4af3-b05b-7e49a27509d8,b074b393-eb44-4551-9fd5-645a1dfa2b5b,73c84a13-7e49-4b29-b8ec-3256c179fafc,9e6ae13a-6dfb-40ed-ad99-735ace9c192e,ff90778e-e998-432c-8856-dd7278f89620,d200f239-5857-4a11-a4ec-721de3468216,b3aed5ed-f675-4be1-bb32-2c787085b326,a33ca35c-dd61-40f3-b4a8-a632d651dec0,38dca0de-bca4-4076-a922-c7e849d40293,8018d026-265e-42e7-8688-7f761369b166,cb0aedb7-8e02-45e3-a7bc-4e213ee45c92,07e061d1-d32a-4928-b05e-3a9ba26dafdb"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2019.2.1.0 (20191202 - Build 19813 - WIN64)"
+#!   LAST_SAVE_DATE="2020-01-02T23:52:51"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="37"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="NO"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="-2755.24 101.564"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="96"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="CITYGML"
+#!   DATASET="$(SourceDataset_CITYGML)"
+#!   KEYWORD="CITYGML_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="citygml_diffuse_color xml_buffer multi_reader_keyword xml_char(50) citygml_image_uri xml_buffer fme_dataset xml_char(50) gml_id xml_buffer citygml_orientation_matrix xml_buffer citygml_target{}.uri xml_buffer citygml_emissive_color xml_buffer fme_sweep_angle xml_real64 citygml_transparency xml_real64 citygml_library_object xml_buffer citygml_ambient_intensity xml_real64 citygml_target{}.coordinate_list{}.ring xml_buffer fme_primary_axis xml_real64 multi_reader_id xml_int32 citygml_target xml_buffer citygml_is_smooth xml_boolean fme_secondary_axis xml_real64 fme_text_string xml_char(50) gml_parent_id xml_buffer fme_type xml_char(50) citygml_texture_type xml_char(16) multi_reader_type xml_char(50) fme_color xml_char(50) citygml_is_front xml_boolean citygml_prefer_world_file xml_boolean fme_feature_type xml_char(50) citygml_target{}.coordinate_list{}.coordinates xml_buffer fme_start_angle xml_real64 multi_reader_full_id xml_int32 fme_fill_color xml_char(50) citygml_transformation_matrix xml_buffer citygml_target{}.world_to_texture_matrix xml_buffer citygml_border_color xml_buffer citygml_level_of_detail xml_ubyte fme_basename xml_char(50) citygml_mime_type xml_buffer fme_rotation xml_real64 citygml_specular_color xml_buffer citygml_lod_name xml_buffer fme_text_size xml_real64 citygml_shininess xml_real64 citygml_theme xml_buffer fme_geometry xml_char(50) citygml_wrap_mode xml_char(16)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE_OR_URL"
+#!   GENERATE_FME_BUILD_NUM="19237"
+#!   COORDSYS="EPSG:4979"
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="TEXTURE_DIRECTORY THEME_NAME"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="CityGML file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the CityGML file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_ADD_FEATURE_TYPE_DEFAULT"
+#!   VALUE="import"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the CityGML file"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="CESIUM3DTILES"
+#!   DATASET="$(DestDataset_CESIUM3DTILES)"
+#!   KEYWORD="CESIUM3DTILES_1"
+#!   MULTI_GEOM_ALLOWED="true"
+#!   ATTR_MAX_LENGTH="600"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_type string fme_secondary_axis float fme_text_size float fme_primary_axis float fme_dataset string fme_geometry string fme_sweep_angle float fme_basename string fme_feature_type string fme_fill_color string fme_text_string string fme_color string fme_start_angle float cesium_priority float fme_rotation float"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEDIR"
+#!   GENERATE_FME_BUILD_NUM="19237"
+#!   COORDSYS=""
+#!   FANOUT_EXPRESSION="&lt;Unused&gt;"
+#!   FANOUT_GROUP="NO"
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="Cesium 3D Tiles"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="tileset"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Cesium 3D Tileset"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Cesium 3D Tileset"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the Cesium 3D Tileset"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_buffer"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_buffer"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_buffer"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_xml"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_datetime"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_date"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_time"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_int64"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_uint64"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_int32"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_uint32"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_int16"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_uint16"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_byte"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_ubyte"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_real32"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_real64"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_decimal(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_char(20)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_char(8)"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_char(12)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_geometry"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="citygml_uri"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="citygml_uri"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="citygml_csv"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="citygml_xml_string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="citygml_date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="CITYGML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_no_geom"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="CITYGML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="CITYGML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_line"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="CITYGML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_area"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="CITYGML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_aggregate"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="CITYGML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_text"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="CITYGML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_area"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="CITYGML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_area"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="CITYGML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_area"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="CITYGML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_arc"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="CITYGML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_surface"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="CITYGML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_solid"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="CITYGML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_mesh"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="CITYGML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_raster"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="CITYGML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_area"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="CITYGML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_area"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="CITYGML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml_no_geom"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="CITYGML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="cesium3dtiles_point_cloud"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="cesium3dtiles_collection"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="cesium3dtiles_solid"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="cesium3dtiles_surface"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="Building"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="15"
+#!   FEAT_GEOMTYPE="xml_aggregate xml_arc xml_area xml_line xml_no_geom xml_point xml_solid xml_surface"
+#!   POSITION="-2338.277621207586 -310.75876387125521"
+#!   BOUNDING_RECT="-2338.277621207586 -310.75876387125521 454 71"
+#!   ORDER="500000000000038"
+#!   COLLAPSED="true"
+#!   KEYWORD="CITYGML_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS="citygml_storeys_above_ground citygml_terminationDate citygml_usage&lt;opencurly&gt;&lt;closecurly&gt;.codeSpace citygml_year_of_construction citygml_storey_heights_above_ground citygml_appearance&lt;opencurly&gt;&lt;closecurly&gt;.xlink_href citygml_year_of_demolition citygml_address&lt;opencurly&gt;&lt;closecurly&gt;.xlink_href citygml_bounded_by&lt;opencurly&gt;&lt;closecurly&gt;.xlink_href citygml_class_codeSpace citygml_feature_role_attr_val citygml_roof_type citygml_class citygml_target_uri citygml_feature_role_attr_name citygml_usage&lt;opencurly&gt;&lt;closecurly&gt; citygml_creationDate citygml_relative_to_terrain citygml_function&lt;opencurly&gt;&lt;closecurly&gt; citygml_storey_heights_below_ground_units citygml_feature_role citygml_consists_of_building_part&lt;opencurly&gt;&lt;closecurly&gt;.xlink_href externalReference&lt;opencurly&gt;&lt;closecurly&gt;.externalObject.name citygml_interior_building_installation&lt;opencurly&gt;&lt;closecurly&gt;.xlink_href externalReference&lt;opencurly&gt;&lt;closecurly&gt;.informationSystem citygml_generalizes_to&lt;opencurly&gt;&lt;closecurly&gt;.xlink_href gml_description citygml_storey_heights_below_ground citygml_function&lt;opencurly&gt;&lt;closecurly&gt;.codeSpace citygml_outer_building_installation&lt;opencurly&gt;&lt;closecurly&gt;.xlink_href citygml_interior_room&lt;opencurly&gt;&lt;closecurly&gt;.xlink_href externalReference&lt;opencurly&gt;&lt;closecurly&gt;.externalObject.uri citygml_roof_type_codeSpace citygml_storeys_below_ground gml_name citygml_relative_to_water citygml_storey_heights_above_ground_units"
+#!   MERGE_FILTER="*"
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_target_uri" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_feature_role" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_feature_role_attr_name" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_feature_role_attr_val" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="gml_description" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="gml_name" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_creationDate" ATTR_TYPE="xml_date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_terminationDate" ATTR_TYPE="xml_date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="externalReference{}.externalObject.name" ATTR_TYPE="xml_xml" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="externalReference{}.externalObject.uri" ATTR_TYPE="xml_xml" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="externalReference{}.informationSystem" ATTR_TYPE="xml_xml" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_generalizes_to{}.xlink_href" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_relative_to_terrain" ATTR_TYPE="xml_char(33)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_relative_to_water" ATTR_TYPE="xml_char(38)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_appearance{}.xlink_href" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_class" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_class_codeSpace" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_function{}" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_function{}.codeSpace" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_usage{}" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_usage{}.codeSpace" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_year_of_construction" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_year_of_demolition" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_roof_type" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_roof_type_codeSpace" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_measured_height" ATTR_TYPE="xml_real64" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_measured_height_units" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_storeys_above_ground" ATTR_TYPE="xml_uint64" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_storeys_below_ground" ATTR_TYPE="xml_uint64" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_storey_heights_above_ground" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_storey_heights_above_ground_units" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_storey_heights_below_ground" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_storey_heights_below_ground_units" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_outer_building_installation{}.xlink_href" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_interior_building_installation{}.xlink_href" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_bounded_by{}.xlink_href" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_level_of_detail{}" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_interior_room{}.xlink_href" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_consists_of_building_part{}.xlink_href" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_address{}.xlink_href" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="area" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="county" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fp_source" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="height_source" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="latitude" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="longitude" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="mgrs" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="state" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ubid" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="CityModel"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="13"
+#!   FEAT_GEOMTYPE="xml_no_geom"
+#!   POSITION="-2536.1962670607109 -729.72308684781808"
+#!   BOUNDING_RECT="-2536.1962670607109 -729.72308684781808 454 71"
+#!   ORDER="500000000000036"
+#!   COLLAPSED="true"
+#!   KEYWORD="CITYGML_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS="citygml_city_object_member&lt;opencurly&gt;&lt;closecurly&gt;.xlink_href citygml_target_uri gml_description citygml_appearance_member&lt;opencurly&gt;&lt;closecurly&gt;.xlink_href gml_name gml_feature_member&lt;opencurly&gt;&lt;closecurly&gt;.xlink_href"
+#!   MERGE_FILTER="*"
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="false"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_target_uri" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="gml_description" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="gml_name" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_city_object_member{}.xlink_href" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_appearance_member{}.xlink_href" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="gml_feature_member{}.xlink_href" ATTR_TYPE="xml_buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="tileset"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="16"
+#!   FEAT_GEOMTYPE="&lt;NO_GEOMETRY&gt;"
+#!   POSITION="491.90100234335694 -752.2880869284877"
+#!   BOUNDING_RECT="491.90100234335694 -752.2880869284877 454 71"
+#!   ORDER="500000000000040"
+#!   COLLAPSED="true"
+#!   KEYWORD="CESIUM3DTILES_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="0"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_measured_height" ATTR_TYPE="float" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_measured_height_units" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="citygml_level_of_detail{}" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="area" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="county" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fp_source" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="height_source" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="latitude" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="longitude" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="mgrs" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="state" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ubid" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="_issues{}.count" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="_issues{}.issue_found" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="_issues{}.location_sample.x" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="_issues{}.location_sample.y" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="_issues{}.location_sample.z" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <READER_DATASETS>
+#! <DATASET 
+#!   NAME="CITYGML_1"
+#!   OVERRIDE="-CITYGML_1_DATASET"
+#!   DATASET="CITYGML_1/Alaska-02170-000.zip&quot;&quot;"
+#! />
+#! </READER_DATASETS>
+#! <WRITER_DATASETS>
+#! <DATASET 
+#!   NAME="CESIUM3DTILES_1"
+#!   OVERRIDE="-CESIUM3DTILES_1_DATASET"
+#!   DATASET="CESIUM3DTILES_1/Alaska"
+#! />
+#! </WRITER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_CITYGML CityGML_Files(*.gml;*.xml;*.gz)|*.gml;*.xml;*.gz|CityGML_Files(*.gml)|*.gml|CityGML_Files(*.xml)|*.xml|Compressed_CityGML_Files(*.gz)|*.gz|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files|* Source CityGML File(s):"
+#!   DEFAULT_VALUE="&quot;&quot;D:\HFT Course Material\Sem 2\GSS\opencitymodel-master\Data\data download test\Alaska\Alaska-02020-000.zip&quot; &quot;D:\HFT Course Material\Sem 2\GSS\opencitymodel-master\Data\data download test\Alaska\Alaska-02020-001.zip&quot; &quot;D:\HFT Course Material\Sem 2\GSS\opencitymodel-master\Data\data download test\Alaska\Alaska-02090-000.zip&quot; &quot;D:\HFT Course Material\Sem 2\GSS\opencitymodel-master\Data\data download test\Alaska\Alaska-02105-000.zip&quot; &quot;D:\HFT Course Material\Sem 2\GSS\opencitymodel-master\Data\data download test\Alaska\Alaska-02110-000.zip&quot; &quot;D:\HFT Course Material\Sem 2\GSS\opencitymodel-master\Data\data download test\Alaska\Alaska-02170-000.zip&quot;&quot;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI DIRNAME DestDataset_CESIUM3DTILES Destination Cesium 3D Tiles Folder:"
+#!   DEFAULT_VALUE="C:\Users\Standard-User\Desktop\Alaska"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="6"
+#!   TYPE="GeometryValidator"
+#!   VERSION="6"
+#!   POSITION="-1105.2007841506984 -392.2880869284877"
+#!   BOUNDING_RECT="-1105.2007841506984 -392.2880869284877 454 71"
+#!   ORDER="500000000000021"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19246"
+#! >
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="citygml_measured_height" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="citygml_measured_height_units" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="citygml_level_of_detail{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="area" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="county" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fp_source" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="height_source" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mgrs" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="state" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ubid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="citygml_measured_height" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="citygml_measured_height_units" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="citygml_level_of_detail{}" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="area" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="county" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fp_source" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="height_source" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mgrs" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="state" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ubid" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.count" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.issue_found" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.location_sample.x" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.location_sample.y" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.location_sample.z" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.repair_state" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="REPAIRED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="citygml_measured_height" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="citygml_measured_height_units" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="citygml_level_of_detail{}" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="area" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="county" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fp_source" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="height_source" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="mgrs" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="state" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="ubid" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.count" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.issue_found" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.location_sample.x" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.location_sample.y" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.location_sample.z" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="ISSUE_LOCATIONS"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="citygml_measured_height" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="citygml_measured_height_units" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="citygml_level_of_detail{}" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="area" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="county" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="fp_source" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="height_source" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="mgrs" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="state" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="ubid" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="count" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="details" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="issue_found" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <OUTPUT_FEAT NAME="INVALID_PARTS"/>
+#!     <FEAT_COLLAPSED COLLAPSED="4"/>
+#!     <XFORM_ATTR ATTR_NAME="citygml_measured_height" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="citygml_measured_height_units" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="citygml_level_of_detail{}" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="area" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="county" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="fp_source" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="height_source" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="mgrs" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="state" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="ubid" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.count" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.issue_found" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.location_sample.x" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.location_sample.y" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.location_sample.z" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.supplementary_info{}" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="5"/>
+#!     <XFORM_ATTR ATTR_NAME="citygml_measured_height" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="citygml_measured_height_units" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="citygml_level_of_detail{}" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="area" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="county" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="fp_source" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="height_source" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="mgrs" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="state" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="ubid" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_PARM PARM_NAME="ISSUE_ATTR_NAME" PARM_VALUE="_issues"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PRESETS" PARM_VALUE="Custom"/>
+#!     <XFORM_PARM PARM_NAME="REPAIR" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="RULES" PARM_VALUE="SHELL_VALIDATION FLIP_APPEARANCE_MODE]FLIP_APPEARANCES]FME_CONTROLLER_QUERY_FILE]transformers&lt;solidus&gt;dependencies&lt;solidus&gt;geometryvalidator&lt;solidus&gt;SHELL_VALIDATION.fme"/>
+#!     <XFORM_PARM PARM_NAME="SUMMARY" PARM_VALUE="Detailed"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="GeometryValidator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="12"
+#!   TYPE="CoordinateSwapper"
+#!   VERSION="0"
+#!   POSITION="-1773.4552345523459 -669.72308684781808"
+#!   BOUNDING_RECT="-1773.4552345523459 -669.72308684781808 454 71"
+#!   ORDER="500000000000028"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19246"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="citygml_measured_height" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="citygml_measured_height_units" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="citygml_level_of_detail{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="area" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="county" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fp_source" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="height_source" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mgrs" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="state" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ubid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="PARAMETER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SWAP_TYPE" PARM_VALUE="X &lt;-&gt; Y"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="CoordinateSwapper"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="14"
+#!   TYPE="AttributeFileWriter"
+#!   VERSION="4"
+#!   POSITION="-111.98028646953139 -184.89768231015648"
+#!   BOUNDING_RECT="-111.98028646953139 -184.89768231015648 463.00106825772946 71"
+#!   ORDER="500000000000042"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19246"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="citygml_measured_height" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="citygml_measured_height_units" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="citygml_level_of_detail{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="area" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="county" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fp_source" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="height_source" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mgrs" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="state" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ubid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.issue_found" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.location_sample.x" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.location_sample.y" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.location_sample.z" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.repair_state" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="citygml_measured_height" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="citygml_measured_height_units" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="citygml_level_of_detail{}" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="area" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="county" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fp_source" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="height_source" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="mgrs" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="state" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ubid" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.count" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.issue_found" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.location_sample.x" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.location_sample.y" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.location_sample.z" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.repair_state" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="CHAR_ENCODING" PARM_VALUE="fme-system"/>
+#!     <XFORM_PARM PARM_NAME="FILE_NAME" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OVERWRITE_FILE" PARM_VALUE="Overwrite file"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SOURCE_ATTR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeFileWriter"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="22"
+#!   SOURCE_NODE="13"
+#!   TARGET_NODE="12"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="23"
+#!   SOURCE_NODE="15"
+#!   TARGET_NODE="12"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="20"
+#!   SOURCE_NODE="6"
+#!   TARGET_NODE="16"
+#!   SOURCE_PORT_DESC="fo 0 PASSED"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="21"
+#!   SOURCE_NODE="12"
+#!   TARGET_NODE="6"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="17"
+#!   SOURCE_NODE="6"
+#!   TARGET_NODE="14"
+#!   SOURCE_PORT_DESC="fo 1 FAILED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="18"
+#!   SOURCE_NODE="6"
+#!   TARGET_NODE="16"
+#!   SOURCE_PORT_DESC="fo 2 REPAIRED"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 37
+GUI IGNORE SourceDataset_CITYGML_1,CITYGML_IN_FME_GROUP_NAMED1_CITYGML_1,CITYGML_IN_USE_CITYGML_SCHEMA_FILES_CITYGML_1,CITYGML_IN_ADE_XSD_DOC_CITYGML_1,CITYGML_IN_VALIDATE_DATASET_CITYGML_1,CITYGML_IN_SKIP_SCHEMA_LOCATION_IN_DATASET_CITYGML_1,CITYGML_IN_ADD_NAMESPACE_PREFIX_TO_FEATURE_TYPES_CITYGML_1,CITYGML_IN_FME_GROUP_NAMED3_CITYGML_1,CITYGML_IN_USE_XLINK_HREF_GEOMETRY_TRAITS_CITYGML_1,CITYGML_IN_FME_GROUP_NAMED4_CITYGML_1,CITYGML_IN_SRS_AXIS_ORDER_CITYGML_1,CITYGML_IN_TEXTURE_COORDINATES_ORDER_FIX_CITYGML_1,CITYGML_IN_USE_SEARCH_ENVELOPE_CITYGML_1,CITYGML_IN_SEARCH_ENVELOPE_MINX_CITYGML_1,CITYGML_IN_SEARCH_ENVELOPE_MINY_CITYGML_1,CITYGML_IN_SEARCH_ENVELOPE_MAXX_CITYGML_1,CITYGML_IN_SEARCH_ENVELOPE_MAXY_CITYGML_1,CITYGML_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_CITYGML_1,CITYGML_IN_CLIP_TO_ENVELOPE_CITYGML_1,CITYGML_IN_NETWORK_AUTHENTICATION_CITYGML_1,DestDataset_CESIUM3DTILES_1,CESIUM3DTILES_OUT_WRITER_PARAMS_CESIUM3DTILES_1,CESIUM3DTILES_OUT_MAX_FEATURES_PER_TILE_CESIUM3DTILES_1
+DEFAULT_MACRO SourceDataset_CITYGML ""D:\HFT Course Material\Sem 2\GSS\opencitymodel-master\Data\data download test\Alaska\Alaska-02020-000.zip" "D:\HFT Course Material\Sem 2\GSS\opencitymodel-master\Data\data download test\Alaska\Alaska-02020-001.zip" "D:\HFT Course Material\Sem 2\GSS\opencitymodel-master\Data\data download test\Alaska\Alaska-02090-000.zip" "D:\HFT Course Material\Sem 2\GSS\opencitymodel-master\Data\data download test\Alaska\Alaska-02105-000.zip" "D:\HFT Course Material\Sem 2\GSS\opencitymodel-master\Data\data download test\Alaska\Alaska-02110-000.zip" "D:\HFT Course Material\Sem 2\GSS\opencitymodel-master\Data\data download test\Alaska\Alaska-02170-000.zip""
+GUI MULTIFILE SourceDataset_CITYGML CityGML_Files(*.gml;*.xml;*.gz)|*.gml;*.xml;*.gz|CityGML_Files(*.gml)|*.gml|CityGML_Files(*.xml)|*.xml|Compressed_CityGML_Files(*.gz)|*.gz|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files|* Source CityGML File(s):
+DEFAULT_MACRO DestDataset_CESIUM3DTILES C:\Users\Standard-User\Desktop\Alaska
+GUI DIRNAME DestDataset_CESIUM3DTILES Destination Cesium 3D Tiles Folder:
+INCLUDE [ if {{$(SourceDataset_CITYGML)} == {}} { puts_real {Parameter 'SourceDataset_CITYGML' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_CESIUM3DTILES)} == {}} { puts_real {Parameter 'DestDataset_CESIUM3DTILES' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} CITYGML
+MULTI_READER_KEYWORD{0} CITYGML_1
+MULTI_READER_GEN_DIRECTIVES{0} USE_SEARCH_ENVELOPE,NO,USE_CITYGML_SCHEMA_FILES,Yes,SEARCH_ENVELOPE_MAXY,0,EXPOSE_ATTRS_GROUP,,SEARCH_ENVELOPE_MAXX,0,SKIP_SCHEMA_LOCATION_IN_DATASET,No,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,_MERGE_SCHEMAS,YES,ADE_XSD_DOC,,VALIDATE_DATASET,no,CITYGML_EXPOSE_FORMAT_ATTRS,,GENERIC_ATTRS_AS_FEATURES,No,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MINX,0,ADD_NAMESPACE_PREFIX_TO_FEATURE_TYPES,No,USE_XLINK_HREF_GEOMETRY_TRAITS,Yes,TEXTURE_COORDINATES_ORDER_FIX,No,VERSION,,SRS_AXIS_ORDER,,MATERIAL_FEATURES,No,ONLY_FEATURE_TYPES_IN_DATASET,YES,CLIP_TO_ENVELOPE,NO,GENERIC_ATTRS_AS_SCHEMA_ATTRS,Yes
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} CESIUM3DTILES
+MULTI_WRITER_KEYWORD{0} CESIUM3DTILES_1
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "CITYGML_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER CITYGML CITYGML_1
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_CITYGML_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER CITYGML CITYGML_1
+DEFAULT_MACRO SourceDataset_CITYGML_1 $(SourceDataset_CITYGML)
+GUI MULTIFILE SourceDataset_CITYGML_1 CityGML_Files(*.gml;*.xml;*.gz)|*.gml;*.xml;*.gz|CityGML_Files(*.gml)|*.gml|CityGML_Files(*.xml)|*.xml|Compressed_CityGML_Files(*.gz)|*.gz|All_Files|* Source CityGML File(s):
+# ============================================================================
+DEFAULT_MACRO CITYGML_IN_FME_GROUP_NAMED1_CITYGML_1 FME_DISCLOSURE_CLOSED
+GUI OPTIONAL DISCLOSUREGROUP CITYGML_IN_FME_GROUP_NAMED1_CITYGML_1 CITYGML_IN_USE_CITYGML_SCHEMA_FILES_CITYGML_1%CITYGML_IN_ADE_XSD_DOC_CITYGML_1%CITYGML_IN_VALIDATE_DATASET_CITYGML_1%CITYGML_IN_SKIP_SCHEMA_LOCATION_IN_DATASET_CITYGML_1%CITYGML_IN_ADD_NAMESPACE_PREFIX_TO_FEATURE_TYPES_CITYGML_1%CITYGML_IN_VERSION CityGML Schema Options
+# ============================================================================
+DEFAULT_MACRO CITYGML_IN_USE_CITYGML_SCHEMA_FILES_CITYGML_1 Yes
+CITYGML_1_USE_CITYGML_SCHEMA_FILES "$(CITYGML_IN_USE_CITYGML_SCHEMA_FILES_CITYGML_1)"
+GUI LOOKUP_CHOICE CITYGML_IN_USE_CITYGML_SCHEMA_FILES_CITYGML_1 "\"Yes (Recommended)\",Yes"%"\"No (Deprecated - Backward-compatible)\",No" Reader Driven by CityGML Schema:
+# ============================================================================
+# The ADE_XSD_DOC keyword overwrites the location of the XML Schema document that
+# is specified in the xsi:schemaLocation of the XML dataset.
+DEFAULT_MACRO CITYGML_IN_ADE_XSD_DOC_CITYGML_1 
+CITYGML_1_ADE_XSD_DOC "$(CITYGML_IN_ADE_XSD_DOC_CITYGML_1)"
+GUI OPTIONAL MULTIFILE CITYGML_IN_ADE_XSD_DOC_CITYGML_1 ADE_Schema_Files(*.xsd)|*.xsd|All_Files(*)|* Additional ADE Schema File(s):
+# ============================================================================
+# This specifies whether the XML dataset should be validated against its
+# DTD file. If set to 'auto', the XML document will only be validated if
+# its DTD file is available.
+DEFAULT_MACRO CITYGML_IN_VALIDATE_DATASET_CITYGML_1 yes
+CITYGML_1_VALIDATE_DATASET "$(CITYGML_IN_VALIDATE_DATASET_CITYGML_1)"
+GUI CHOICE CITYGML_IN_VALIDATE_DATASET_CITYGML_1 yes%no Validate CityGML Dataset File:
+# ============================================================================
+# The ADE_XSD_DOC keyword overwrites the location of the XML Schema document that
+# is specified in the xsi:schemaLocation of the XML dataset.
+DEFAULT_MACRO CITYGML_IN_SKIP_SCHEMA_LOCATION_IN_DATASET_CITYGML_1 No
+CITYGML_1_SKIP_SCHEMA_LOCATION_IN_DATASET "$(CITYGML_IN_SKIP_SCHEMA_LOCATION_IN_DATASET_CITYGML_1)"
+GUI CHOICE CITYGML_IN_SKIP_SCHEMA_LOCATION_IN_DATASET_CITYGML_1 Yes%No Ignore xsi:schemaLocation in Dataset:
+DEFAULT_MACRO CITYGML_IN_ADD_NAMESPACE_PREFIX_TO_FEATURE_TYPES_CITYGML_1 No
+CITYGML_1_ADD_NAMESPACE_PREFIX_TO_FEATURE_TYPES "$(CITYGML_IN_ADD_NAMESPACE_PREFIX_TO_FEATURE_TYPES_CITYGML_1)"
+GUI CHOICE CITYGML_IN_ADD_NAMESPACE_PREFIX_TO_FEATURE_TYPES_CITYGML_1 Yes%No Add XML Namespace Prefix to Feature Types:
+# ============================================================================
+# ============================================================================
+# ============================================================================
+DEFAULT_MACRO CITYGML_IN_ONLY_FEATURE_TYPES_IN_DATASET_CITYGML_1 YES
+CITYGML_1_ONLY_FEATURE_TYPES_IN_DATASET "$(CITYGML_IN_ONLY_FEATURE_TYPES_IN_DATASET_CITYGML_1)"
+# ============================================================================
+# Allow the user to choose if GenericAttribute should be included as Feature types
+DEFAULT_MACRO CITYGML_IN_GENERIC_ATTRS_AS_FEATURES_CITYGML_1 No
+CITYGML_1_GENERIC_ATTRS_AS_FEATURES "$(CITYGML_IN_GENERIC_ATTRS_AS_FEATURES_CITYGML_1)"
+# ============================================================================
+# Allow the user to choose if X3DMaterials and ParameterizedTextures should be included as Feature types
+# The default is No.
+DEFAULT_MACRO CITYGML_IN_MATERIAL_FEATURES_CITYGML_1 No
+CITYGML_1_MATERIAL_FEATURES "$(CITYGML_IN_MATERIAL_FEATURES_CITYGML_1)"
+# ============================================================================
+DEFAULT_MACRO CITYGML_IN_GENERIC_ATTRS_AS_SCHEMA_ATTRS_CITYGML_1 Yes
+CITYGML_1_GENERIC_ATTRS_AS_SCHEMA_ATTRS "$(CITYGML_IN_GENERIC_ATTRS_AS_SCHEMA_ATTRS_CITYGML_1)"
+# ============================================================================
+DEFAULT_MACRO CITYGML_IN_FME_GROUP_NAMED3_CITYGML_1 FME_DISCLOSURE_CLOSED
+GUI OPTIONAL DISCLOSUREGROUP CITYGML_IN_FME_GROUP_NAMED3_CITYGML_1 CITYGML_IN_USE_XLINK_HREF_GEOMETRY_TRAITS_CITYGML_1 CityGML Options
+DEFAULT_MACRO CITYGML_IN_USE_XLINK_HREF_GEOMETRY_TRAITS_CITYGML_1 No
+CITYGML_1_USE_XLINK_HREF_GEOMETRY_TRAITS "$(CITYGML_IN_USE_XLINK_HREF_GEOMETRY_TRAITS_CITYGML_1)"
+GUI CHOICE CITYGML_IN_USE_XLINK_HREF_GEOMETRY_TRAITS_CITYGML_1 Yes%No Add xlink_href Traits from Geometry References:
+# ============================================================================
+DEFAULT_MACRO CITYGML_IN_FME_GROUP_NAMED4_CITYGML_1 FME_DISCLOSURE_CLOSED
+GUI OPTIONAL DISCLOSUREGROUP CITYGML_IN_FME_GROUP_NAMED4_CITYGML_1 CITYGML_IN_SRS_AXIS_ORDER_CITYGML_1%CITYGML_IN_TEXTURE_COORDINATES_ORDER_FIX_CITYGML_1 SRS Parameters
+# ============================================================================
+DEFAULT_MACRO CITYGML_IN_SRS_AXIS_ORDER_CITYGML_1 2,1,3
+CITYGML_1_SRS_AXIS_ORDER "$(CITYGML_IN_SRS_AXIS_ORDER_CITYGML_1)"
+GUI OPTIONAL CHOICE CITYGML_IN_SRS_AXIS_ORDER_CITYGML_1 1,2%2,1%1,2,3%2,1,3 GML SRS Axis Order:
+# ============================================================================
+DEFAULT_MACRO CITYGML_IN_TEXTURE_COORDINATES_ORDER_FIX_CITYGML_1 No
+CITYGML_1_TEXTURE_COORDINATES_ORDER_FIX "$(CITYGML_IN_TEXTURE_COORDINATES_ORDER_FIX_CITYGML_1)"
+GUI LOOKUP_CHOICE CITYGML_IN_TEXTURE_COORDINATES_ORDER_FIX_CITYGML_1 "\"No (Recommended)\",No"%"\"Yes (Deprecated - Backward-compatible)\",Yes" Texture Coordinate Order to follow SRS Axis Order:
+DEFAULT_MACRO CITYGML_IN_EXPOSE_ATTRS_GROUP_CITYGML_1 
+CITYGML_1_EXPOSE_ATTRS_GROUP "$(CITYGML_IN_EXPOSE_ATTRS_GROUP_CITYGML_1)"
+# Include this file in source setting section to add external search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+DEFAULT_MACRO CITYGML_IN_USE_SEARCH_ENVELOPE_CITYGML_1 NO
+CITYGML_1_USE_SEARCH_ENVELOPE "$(CITYGML_IN_USE_SEARCH_ENVELOPE_CITYGML_1)"
+GUI ACTIVEDISCLOSUREGROUP CITYGML_IN_USE_SEARCH_ENVELOPE_CITYGML_1 CITYGML_IN_SEARCH_ENVELOPE_MINX_CITYGML_1%CITYGML_IN_SEARCH_ENVELOPE_MINY_CITYGML_1%CITYGML_IN_SEARCH_ENVELOPE_MAXX_CITYGML_1%CITYGML_IN_SEARCH_ENVELOPE_MAXY_CITYGML_1%CITYGML_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_CITYGML_1%CITYGML_IN_CLIP_TO_ENVELOPE_CITYGML_1%CITYGML_IN_SEARCH_METHOD%CITYGML_IN_SEARCH_METHOD_FILTER%CITYGML_IN_SEARCH_ORDER%CITYGML_IN_SEARCH_FEATURE%CITYGML_IN_DUMMY_SEARCH_ENVELOPE_PARAMETER Use Search Envelope
+# ===========================================================================
+GUI LOOKUP CITYGML_IN_SEARCH_ENVELOPE_MINX_CITYGML_1 <Unused>,0 
+DEFAULT_MACRO CITYGML_IN_SEARCH_ENVELOPE_MINX_CITYGML_1 0
+CITYGML_1_SEARCH_ENVELOPE "$(CITYGML_IN_SEARCH_ENVELOPE_MINX_CITYGML_1)"
+GUI OPTIONAL FLOAT CITYGML_IN_SEARCH_ENVELOPE_MINX_CITYGML_1 Minimum X:
+# ===========================================================================
+GUI LOOKUP CITYGML_IN_SEARCH_ENVELOPE_MINY_CITYGML_1 <Unused>,0 
+DEFAULT_MACRO CITYGML_IN_SEARCH_ENVELOPE_MINY_CITYGML_1 0
+CITYGML_1_SEARCH_ENVELOPE "$(CITYGML_IN_SEARCH_ENVELOPE_MINY_CITYGML_1)"
+GUI OPTIONAL FLOAT CITYGML_IN_SEARCH_ENVELOPE_MINY_CITYGML_1 Minimum Y:
+# ===========================================================================
+GUI LOOKUP CITYGML_IN_SEARCH_ENVELOPE_MAXX_CITYGML_1 <Unused>,0 
+DEFAULT_MACRO CITYGML_IN_SEARCH_ENVELOPE_MAXX_CITYGML_1 0
+CITYGML_1_SEARCH_ENVELOPE "$(CITYGML_IN_SEARCH_ENVELOPE_MAXX_CITYGML_1)"
+GUI OPTIONAL FLOAT CITYGML_IN_SEARCH_ENVELOPE_MAXX_CITYGML_1 Maximum X:
+# ===========================================================================
+GUI LOOKUP CITYGML_IN_SEARCH_ENVELOPE_MAXY_CITYGML_1 <Unused>,0 
+DEFAULT_MACRO CITYGML_IN_SEARCH_ENVELOPE_MAXY_CITYGML_1 0
+CITYGML_1_SEARCH_ENVELOPE "$(CITYGML_IN_SEARCH_ENVELOPE_MAXY_CITYGML_1)"
+GUI OPTIONAL FLOAT CITYGML_IN_SEARCH_ENVELOPE_MAXY_CITYGML_1 Maximum Y:
+# ===========================================================================
+GUI LOOKUP CITYGML_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_CITYGML_1 <Unused>, 
+DEFAULT_MACRO CITYGML_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_CITYGML_1 
+CITYGML_1_SEARCH_ENVELOPE "$(CITYGML_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_CITYGML_1)"
+GUI OPTIONAL COORDSYS CITYGML_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_CITYGML_1 Search Envelope Coordinate System:
+# ===========================================================================
+# BUG18999: We now have a soft clip to fall back on like native spatial index
+# thus we are reintroducing the clip to envelop as an option for users.
+# Defualt to soft clip as per the existing database readers we are emulating
+GUI LOOKUP CITYGML_IN_CLIP_TO_ENVELOPE_CITYGML_1 <Unused>,NO 
+DEFAULT_MACRO CITYGML_IN_CLIP_TO_ENVELOPE_CITYGML_1 NO
+CITYGML_1_CLIP_TO_ENVELOPE "$(CITYGML_IN_CLIP_TO_ENVELOPE_CITYGML_1)"
+GUI OPTIONAL CHECKBOX CITYGML_IN_CLIP_TO_ENVELOPE_CITYGML_1 YES%NO Clip to Search Envelope
+# ===========================================================================
+DEFAULT_MACRO CITYGML_IN_NETWORK_AUTHENTICATION_CITYGML_1 
+CITYGML_1_NETWORK_AUTHENTICATION "$(CITYGML_IN_NETWORK_AUTHENTICATION_CITYGML_1)"
+GUI OPTIONAL AUTHENTICATOR CITYGML_IN_NETWORK_AUTHENTICATION_CITYGML_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================ 
+DEFAULT_MACRO CITYGML_IN_ATTRIBUTE_READING_CITYGML_1 ALL
+CITYGML_1_ATTRIBUTE_READING "$(CITYGML_IN_ATTRIBUTE_READING_CITYGML_1)"
+# ============================================================================ 
+CITYGML_1_GENERATE_FME_BUILD_NUM 19237
+CITYGML_1_DATASET "$(SourceDataset_CITYGML_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "CESIUM3DTILES_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER CESIUM3DTILES CESIUM3DTILES_1
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_CESIUM3DTILES_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER CESIUM3DTILES CESIUM3DTILES_1
+DEFAULT_MACRO DestDataset_CESIUM3DTILES_1 $(DestDataset_CESIUM3DTILES)
+GUI DIRNAME DestDataset_CESIUM3DTILES_1 Destination Cesium 3D Tiles Folder:
+DEFAULT_MACRO CESIUM3DTILES_OUT_WRITER_PARAMS_CESIUM3DTILES_1 
+GUI OPTIONAL DISCLOSUREGROUP CESIUM3DTILES_OUT_WRITER_PARAMS_CESIUM3DTILES_1 CESIUM3DTILES_OUT_MAX_FEATURES_PER_TILE_CESIUM3DTILES_1 Writer Parameters
+DEFAULT_MACRO CESIUM3DTILES_OUT_MAX_FEATURES_PER_TILE_CESIUM3DTILES_1 300
+CESIUM3DTILES_1_MAX_FEATURES_PER_TILE "$(CESIUM3DTILES_OUT_MAX_FEATURES_PER_TILE_CESIUM3DTILES_1)"
+GUI RANGE_SLIDER CESIUM3DTILES_OUT_MAX_FEATURES_PER_TILE_CESIUM3DTILES_1 1%MAX%0 Maximum Number of Features Per Tile:
+DEFAULT_MACRO CESIUM3DTILES_OUT_COORDINATE_SYSTEM_GRANULARITY_CESIUM3DTILES_1 FEATURE
+CESIUM3DTILES_1_COORDINATE_SYSTEM_GRANULARITY "$(CESIUM3DTILES_OUT_COORDINATE_SYSTEM_GRANULARITY_CESIUM3DTILES_1)"
+# ============================================================================ 
+CESIUM3DTILES_1_GENERATE_FME_BUILD_NUM 19237
+CESIUM3DTILES_1_DATASET "$(DestDataset_CESIUM3DTILES_1)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)Final_V3.log"
+LOG_APPEND NO
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+DEFAULT_MACRO DATASET_KEYWORD_CITYGML_1 CITYGML_1
+DEFAULT_MACRO DATASET_KEYWORD_CESIUM3DTILES_1 CESIUM3DTILES_1
+# -------------------------------------------------------------------------
+
+CITYGML_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+CITYGML_1_COORDINATE_SYSTEM EPSG:4979
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME Final_V3
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+CITYGML_1_DEF Building   citygml_target_uri           xml_buffer   citygml_feature_role         xml_buffer   citygml_feature_role_attr_name xml_buffer   citygml_feature_role_attr_val xml_buffer   gml_description              xml_buffer   gml_name                     xml_buffer   citygml_creationDate         xml_date   citygml_terminationDate      xml_date   externalReference{}.externalObject.name xml_xml   externalReference{}.externalObject.uri xml_xml   externalReference{}.informationSystem xml_xml   citygml_generalizes_to{}.xlink_href xml_buffer   citygml_relative_to_terrain  xml_char(33)   citygml_relative_to_water    xml_char(38)   citygml_appearance{}.xlink_href xml_buffer   citygml_class                xml_buffer   citygml_class_codeSpace      xml_buffer   citygml_function{}           xml_buffer   citygml_function{}.codeSpace xml_buffer   citygml_usage{}              xml_buffer   citygml_usage{}.codeSpace    xml_buffer   citygml_year_of_construction xml_buffer   citygml_year_of_demolition   xml_buffer   citygml_roof_type            xml_buffer   citygml_roof_type_codeSpace  xml_buffer   citygml_measured_height      xml_real64   citygml_measured_height_units xml_buffer   citygml_storeys_above_ground xml_uint64   citygml_storeys_below_ground xml_uint64   citygml_storey_heights_above_ground xml_buffer   citygml_storey_heights_above_ground_units xml_buffer   citygml_storey_heights_below_ground xml_buffer   citygml_storey_heights_below_ground_units xml_buffer   citygml_outer_building_installation{}.xlink_href xml_buffer   citygml_interior_building_installation{}.xlink_href xml_buffer   citygml_bounded_by{}.xlink_href xml_buffer   citygml_level_of_detail{}    xml_buffer   citygml_interior_room{}.xlink_href xml_buffer   citygml_consists_of_building_part{}.xlink_href xml_buffer   citygml_address{}.xlink_href xml_buffer   area                         xml_buffer   county                       xml_buffer   fp_source                    xml_buffer   height_source                xml_buffer   latitude                     xml_buffer   longitude                    xml_buffer   mgrs                         xml_buffer   state                        xml_buffer   ubid                         xml_buffer
+# -------------------------------------------------------------------------
+CITYGML_1_DEF CityModel   citygml_target_uri           xml_buffer   gml_description              xml_buffer   gml_name                     xml_buffer   citygml_city_object_member{}.xlink_href xml_buffer   citygml_appearance_member{}.xlink_href xml_buffer   gml_feature_member{}.xlink_href xml_buffer
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_CITYGML_1)   INPUT FEATURE_TYPE *    ROUTE CITYGML CITYGML_1::Building multi_reader_keyword,$(DATASET_KEYWORD_CITYGML_1) TO FME_GENERIC ::Building ALIAS_GEOMETRY    ROUTE CITYGML CITYGML_1::CityModel multi_reader_keyword,$(DATASET_KEYWORD_CITYGML_1) TO FME_GENERIC ::CityModel ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+CITYGML_1_MERGE_DEF CITYGML_1::Building EXACT Building
+CITYGML_1_MERGE_DEF CITYGML_1::CityModel EXACT CityModel
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Building (CITYGML_1) Splitter"    INPUT FEATURE_TYPE Building    OUTPUT FEATURE_TYPE Building_CITYGML_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "CityModel (CITYGML_1) Splitter"    INPUT FEATURE_TYPE CityModel    OUTPUT FEATURE_TYPE CityModel_CITYGML_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory    FACTORY_NAME CoordinateSwapper    INPUT  FEATURE_TYPE CityModel_CITYGML_1    INPUT  FEATURE_TYPE Building_CITYGML_1    OUTPUT FEATURE_TYPE CoordinateSwapper_OUTPUT         @Affine(0,1,0,1,0,0)
+# -------------------------------------------------------------------------
+FACTORY_DEF * GeometryValidationFactory    FACTORY_NAME GeometryValidator    INPUT  FEATURE_TYPE CoordinateSwapper_OUTPUT    ISSUE_ATTR_NAME "_issues"    REPAIR_MODE    VALIDATION_ISSUE SHELL_VALIDATION FLIP_APPEARANCE_MODE]FLIP_APPEARANCES    REJECT_INVALID Yes    OUTPUT VALID FEATURE_TYPE GeometryValidator_PASSED    OUTPUT INVALID FEATURE_TYPE GeometryValidator_FAILED    OUTPUT REPAIRED FEATURE_TYPE GeometryValidator_REPAIRED
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeFileWriter_AttributeFileWriterInput    INPUT  FEATURE_TYPE GeometryValidator_FAILED    OUTPUT FEATURE_TYPE ___TOATTRIBUTEFILEWRITER___
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeFileWriter    INPUT FEATURE_TYPE ___TOATTRIBUTEFILEWRITER___         @RenameAttributes(FME_STRICT,___fme_rejection_code___,fme_rejection_code)    OUTPUT FEATURE_TYPE ___TOREJECTOR___         @File(REJECTABLE,ENCODED_PARAMS,DestWriteSrcRead,,"",fme-system)
+FACTORY_DEF * TestFactory    FACTORY_NAME AttributeFileWriter_Rejector    INPUT FEATURE_TYPE ___TOREJECTOR___    TEST @Value(fme_rejection_code) != ""    OUTPUT PASSED FEATURE_TYPE AttributeFileWriter_<REJECTED>       @RemoveAttributes(___fme_rejection_code___)    OUTPUT FAILED FEATURE_TYPE AttributeFileWriter_OUTPUT       @RenameAttributes(FME_STRICT,fme_rejection_code,___fme_rejection_code___)
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFileWriter OUTPUT Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFileWriter_OUTPUT
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFileWriter <REJECTED> Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFileWriter_<REJECTED>
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC GeometryValidator_PASSED TO CESIUM3DTILES __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>tileset<closeparen> GEOMETRY    ROUTE FME_GENERIC GeometryValidator_REPAIRED TO CESIUM3DTILES __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>tileset<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+CESIUM3DTILES_1_DEF tileset   citygml_measured_height      float   citygml_measured_height_units string   citygml_level_of_detail{}    string   area                         string   county                       string   fp_source                    string   height_source                string   latitude                     string   longitude                    string   mgrs                         string   state                        string   ubid                         string   _issues{}.count              string   _issues{}.issue_found        string   _issues{}.location_sample.x  string   _issues{}.location_sample.y  string   _issues{}.location_sample.z  string

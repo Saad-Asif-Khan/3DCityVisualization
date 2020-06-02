@@ -1,0 +1,59 @@
+﻿    html, body, #cesiumContainer {
+        width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;
+    }
+.toolbar-left
+{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: medium solid #232323;
+    opacity: 0.90;
+    background-color: #333333;
+    z-index: 15;
+    display: block;
+    padding: 5px;
+    position: absolute;
+    left: 5px;
+    color:white;
+}
+    .Image
+    {
+        border-radius:8px;
+        opacity:0.90;
+        z-index:15;
+        display: block;
+        padding: 5px;
+        position: absolute;
+        bottom:30px;
+        right: 3px
+        
+    }
+    #main-loading{
+	    background-color:#585555;
+	    position:relative;
+        z-index:20;
+    }
+    #loadingTilesets
+    {
+        background-color: #333333;
+        position:relative;
+        left:20px;
+    }
+    #main-loading #app-loading{
+	    position: absolute;
+	    background-repeat: no-repeat;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+        z-index:20;
+    }
+    #main-loading #loading-gif{
+	    position: absolute;
+	    background-image: url('Images/predefined_loading_1.gif');
+	    background-repeat: no-repeat;
+	    width:58px;
+	    height:29px;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+        z-index:21;
+    }

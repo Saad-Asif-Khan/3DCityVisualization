@@ -1,7 +1,13 @@
 """
+******************************************************
+****Python GUI for Automation of 3D model creation****
+****             2018-19                          ****
+******************************************************
+
 @ This code contains Python GUI that can be used for 
 automatic conversion of CityGML models to Cesium 3D Tiles.
 """
+
 from PyQt5 import QtCore, QtGui, QtWidgets
 import os, sys, csv
 import urllib3
@@ -252,7 +258,7 @@ class Ui_Dialog(QtWidgets.QMainWindow):
         ## choose download and conversion option
         self.radio_.setChecked(True)
         self.radio_download.toggled.connect(lambda:self.btnstate(self.radio_download))
-        self.radio_.toggled.connect(lambda:self.btnstate(self.radio_))   #radio_ is object name for convert
+        self.radio_.toggled.connect(lambda:self.btnstate(self.radio_))   
 
         ## Here call different buttons
         self.fmeModel.clicked.connect(self.fmebrowse)
@@ -300,6 +306,7 @@ class Ui_Dialog(QtWidgets.QMainWindow):
         if b.text()=="Download":  
             if b.isChecked()==True:
                 self.download_folder.setEnabled(True)
+                self.download_folder_2.setEnabled(True)
                 self.textBrowser.setEnabled(True)
                 self.download.setEnabled(True)
                 self.browsedownload.setEnabled(True)
@@ -308,6 +315,7 @@ class Ui_Dialog(QtWidgets.QMainWindow):
                 
             else:
                 self.download_folder.setDisabled(True)
+                self.download_folder_2.setDisabled(True)
                 self.textBrowser.setDisabled(True)
                 self.download.setDisabled(True)
                 self.browsedownload.setDisabled(True)
@@ -338,7 +346,7 @@ class Ui_Dialog(QtWidgets.QMainWindow):
                 self.convert.setDisabled(True)
                 self.cancel.setDisabled(True)
                 
-        ##****** Conversion Code*********##
+    ##****** Conversion Code*********##
     def conversion(self,model,src,dest):
             model = '"'+model.replace("\\","\\\\")+'"'
             print(model)
@@ -368,7 +376,7 @@ class Ui_Dialog(QtWidgets.QMainWindow):
             total_n = len(total_files)
             start=0
             run_len = n
-            counter = 0                                                             #for crearing folders
+            counter = 0                                                             
             while start<total_n:
                 new_dest = root_dest+"\\"+folds+str(counter)
                 if not os.path.exists(new_dest):
@@ -407,10 +415,11 @@ class Ui_Dialog(QtWidgets.QMainWindow):
                     if (gml[-4:]=='.zip'):
                         file = '""'+root_src+"\\"+folds+"\\"+gml+'""'
                         self.conversion(fmemodel,file,new_dest)
-                    counter = counter+1                 #for different folders of same state.
+                    counter = counter+1                 
                     print(counter)
                     
       ##*******Conversion code Ends*****##
+                    
     def download_htm_browse(self):
         global rootfolder
         rootfolder = QtWidgets.QFileDialog.getExistingDirectory(self,'Select HTML Download Directory')
@@ -419,7 +428,7 @@ class Ui_Dialog(QtWidgets.QMainWindow):
         global dir_path1
         dir_path1 = QtWidgets.QFileDialog.getExistingDirectory(self,'Select Download Directory')
         self.download_folder_2.setText(dir_path1)
-        print(dir_path1)                    
+        
 ##*********Download Automate*******##
     def download_button(self):
         global filename
@@ -448,11 +457,9 @@ class Ui_Dialog(QtWidgets.QMainWindow):
         if(file_type =='zip'):
             ## from here, download of files with base names will be done...
             down_url = url
-#           web_file = urllib2.urlopen(down_url)
             http = urllib3.PoolManager()
             web_file = http.request('GET', down_url)
             file_name = dir_path+base_filename
-#            print(file_name)
             if not os.path.exists(file_name):
                 local_file = open(file_name,'wb')
                 local_file.write(web_file.data)
@@ -460,7 +467,6 @@ class Ui_Dialog(QtWidgets.QMainWindow):
                 local_file.close()
                 a=''
                 a +="Downloaded: "+base_filename+" in Folder"+filename
-#                print(a)
                 self.textBrowser.setPlainText('a')
  
     def fmebrowse(self):
@@ -478,7 +484,6 @@ class Ui_Dialog(QtWidgets.QMainWindow):
         self.DestText.setText(root_dest)
 
     def get3Dtiles(self):
-    #        print(root_src,root_dest,fmemodel)
             skip= self.listoption.currentItem().text()
             print("check skip",type(skip))
             if(skip=='All'):

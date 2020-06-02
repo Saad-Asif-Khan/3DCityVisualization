@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="StyleSheet.css" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cesiumjs.org/releases/1.57/Build/Cesium/Cesium.js"></script>
+    <link href="https://cesiumjs.org/releases/1.57/Build/Cesium/Widgets/widgets.css" rel="stylesheet"/>
+    <style>
+      #main-loading{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        overflow: hidden;
+      }
+    </style>
+</head>
+<body onload="Onload()">
+    <div id="main-loading">
+        <div id="app-loading"></div>
+        <div id="loading-gif"></div>
+    </div>
+
+
+    <div id="cesiumContainer">
+        
+    </div>
+    <div id="Division">
+        <select id="DropDown" class="toolbar-left" onchange="ZoomToTile(this)" style="top: 5px" title="Zoom to State"></select><br />
+        <select id="DropDown2" class="toolbar-left" onchange="Symbology(this)" style="top: 50px" title="Symbology"></select><br />
+        <img id="AreaImage" class="Image" style="width: 100px; height: 180px; visibility: hidden" src="Images/Area.gif" alt="Legend Missing" />
+        <img id="HeightImage" class="Image" style="width: 100px; height: 150px; visibility: hidden" src="Images/Height.gif" alt="Legend Missing" />
+    </div>
+    <script type="text/javascript" src="JavaScript.js"></script>
+</body>
+</html>
