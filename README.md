@@ -18,10 +18,15 @@ Second major part in this project is an IIS server which contains webpages that 
 * This study is conducted for data of “The United States”. 
 * Source of Data: https://github.com/opencitymodel/opencitymodel
 
-
 # Prerequisites
 There are certain prerequirements that needs to be fulfilled. These are as follows: 
 1. **FME** 
 2. **Python** 
 3. **JavaScript**
 4. **HTML**
+
+# Methods
+* Following methodology has been used to implement this project:
+![](https://github.com/82siha1mpg/3DCityVisualization/blob/master/Image/Methodology.JPG)
+
+
