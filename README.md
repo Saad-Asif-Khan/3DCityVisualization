@@ -23,8 +23,9 @@ There are certain prerequirements that needs to be fulfilled. These are as follo
 1. **FME** 
 2. **Python** 
 3. **PyQT5**
-3. **JavaScript**
-4. **HTML**
+4. **JavaScript**
+5. **C#**
+6. **HTML**
 
 # Methods
 * Following methodology has been used to implement this project:
